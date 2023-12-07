@@ -1,7 +1,7 @@
 /******************************
 
 [rewrite_local]
-^https:\/\/(api-ks|xiaoshuo)\.wtzw\.com\/api\/(v1\/extra\/init|v3\/user\/my-center) url script-request-header https://raw.githubusercontent.com/Kyle0816/Quantumult-X/main/Rewrite/7mao.js
+^https:\/\/(api-ks|xiaoshuo)\.wtzw\.com\/api\/(v1\/extra\/init|v3\/user\/my-center) url script-response-body https://raw.githubusercontent.com/Kyle0816/Quantumult-X/main/Rewrite/7mao.js
 # 重定向福利活动页面，链接可以改成想改的网页
 ^https:\/\/xiaoshuo\.wtzw\.com\/app-h5\/freebook\/welfare-center.*$ 302 https://baidu.com
 
