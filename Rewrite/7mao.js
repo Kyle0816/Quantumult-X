@@ -1,4 +1,3 @@
-/******************************
 
 [rewrite_local]
 ^https:\/\/(api-ks|xiaoshuo)\.wtzw\.com\/api\/(v1\/extra\/init|v3\/user\/my-center) url script-response-body https://raw.githubusercontent.com/Kyle0816/Quantumult-X/main/Rewrite/7mao.js
@@ -6,9 +5,8 @@
 ^https:\/\/xiaoshuo\.wtzw\.com\/app-h5\/freebook\/welfare-center.*$ 302 https://baidu.com
 
 [mitm]
-hostname = api-gw.wtzw.com, xiaoshuo.wtzw.com,api-ks.wtzw.com
+hostname = xiaoshuo.wtzw.com,api-ks.wtzw.com
 
-********************************/
 	
 if ($request.url.includes("/api/v1/extra/init")) {
   var obj = JSON.parse($response.body);
