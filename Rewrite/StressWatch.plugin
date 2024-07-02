@@ -1,0 +1,11 @@
+#!name = StressWatch解锁VIP
+#!desc =  适用1.1.5, 862503663
+#!author = Eric
+#!homepage = https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Module/StressWatch.sgmodule
+#!icon = https://raw.githubusercontent.com/Kyle0816/Quantumult-X/main/icon/StressWatch.png
+
+[Script
+http-request https://api.ideation.love/api/v1/check script-path = https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/StressWatch.js, requires-body = true, tag = StressWatch解锁VIP
+http-response https://api.(ideation.love|revenuecat.com)\/(api/v1/subscription/confirm|api/v1/check|.+\/(receipts|subscribers\/(\$RCAnonymousID%)?([\u4E00-\u9FA5A-Za-z0-9-_=]+))$) script-path = https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/stresswatch.js, requires-body = true, tag = StressWatch解锁VIP
+[Mitm]
+hostname = api.revenuecat.com, api.ideation.love
