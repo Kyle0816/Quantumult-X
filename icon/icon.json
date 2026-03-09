@@ -1,0 +1,11 @@
+{
+"name":"qx", 
+"description":"自用", 
+"icons":
+    [
+	{"name":"ash", "url":"https://raw.githubusercontent.com/Kyle0816/Quantumult-X/main/icon/ash.png"},
+	{"name":"red", "url":"https://raw.githubusercontent.com/Kyle0816/Quantumult-X/main/icon/red.png"},
+	{"name":"cheers", "url":"https://raw.githubusercontent.com/Kyle0816/Quantumult-X/main/icon/cheers.png"}
+
+    ]
+}
